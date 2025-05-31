@@ -11,13 +11,18 @@ class Queue:
         else:
             raise IndexError("Index out of range")
     def rear(self):
-        return self.mylist[len(self.mylist)-1]
+        return self.mylist[-1]
+    #return self.mylist[len(self.mylist)-1]
     def front(self):
         return self.mylist[0] 
     def size(self):
         return len(self.mylist)
 
 st=Queue()
+try :
+    print(st.front())
+except IndexError as e:
+    print(e.args[0])
 st.push(10)
 st.push(20)
 st.push(30)
