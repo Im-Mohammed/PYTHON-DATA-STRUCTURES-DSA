@@ -23,15 +23,18 @@ class dll:
         if self.start is None:
             n=Node(None,value,None)
             self.start=n
+            return n
         elif self.start.next is None:
             n=Node(self.start,value,None)
             self.start.next=n
+            return n
         else:
             temp=self.start
             while temp.next is not None:
                 temp=temp.next
             n=Node(temp,value,None)
             temp.next=n
+            return n
             
     def search(self,value):
         if self.start.item==value:
@@ -74,6 +77,7 @@ class dll:
             while temp.next.next is not None:
                 temp=temp.next
             temp.next=None
+            return temp
     def delete_at_middle_using_search(self,temp):
         if self.start is None:
             pass
@@ -110,7 +114,7 @@ class dlliterator:
         self.current=self.current.next
         return data
             
-
+"""
 mylist=dll()
 mylist.insert_at_start(30)
 mylist.insert_at_start(20)
@@ -142,3 +146,4 @@ mylist.print_all_elements()
 print('\n')
 for x in mylist:
     print(x)
+    """
