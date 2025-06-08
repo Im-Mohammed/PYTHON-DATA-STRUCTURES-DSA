@@ -25,7 +25,7 @@ THe condition for odd is n%2!=0
 print('\n')
 Oddnat(5)
 '''
-Write a recursive function to print first n odd natural Numbers in reverse Order
+Write a recursive function to print  odd natural Numbers upto given n value in reverse Order
 '''
 print('\n')
 def Oddnatrev(n):
@@ -35,7 +35,9 @@ def Oddnatrev(n):
         Oddnatrev(n-1)
 #Driver Code 
 Oddnatrev(5)
-
+'''
+Write a recursive function to print first n odd natural Numbers in reverse Order
+'''
 #another way 
 def Oddnat2rev(n):
     if n > 0:
