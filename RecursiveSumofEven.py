@@ -8,3 +8,4 @@ def Evensum(n):
 #driver code 
 r=Evensum(3)
 print("The even sum is : ",r)
+#2+4+6=12
