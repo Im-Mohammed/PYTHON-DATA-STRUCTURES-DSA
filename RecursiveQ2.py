@@ -1,5 +1,5 @@
 '''
-Write a recursive function to print first n odd natural Numbers
+Write a recursive function to print  odd natural Numbers upto given n value 
 '''
 def Oddnat(n):
     if n >0:
@@ -7,11 +7,13 @@ def Oddnat(n):
         if n % 2 !=0:
             print(n,end=" ")
 #another way 
+'''
+Write a recursive function to print first n  odd natural Numbers 
+'''
 def Oddnat2(n):
     if n > 0:
         Oddnat2(n-1)
-    if n %2!=0:
-        print(n,end=" ")
+        print(2*n-1,end=" ")
   
 print('\n')
 Oddnat2(10)
@@ -36,9 +38,8 @@ Oddnatrev(5)
 
 #another way 
 def Oddnat2rev(n):
-    if n %2!=0:
-        print(n,end=" ")
     if n > 0:
+        print(2*n-1,end=" ")
         Oddnat2rev(n-1)
   
 print('\n')
