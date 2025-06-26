@@ -22,3 +22,14 @@ d=a1+b+c
 print(d)
 f=list(set(d))
 print(f)
+
+sentence=["alice and bob love leetcode","i think so too","this is great thanks very much"]
+a=[]
+for i in sentence:
+    count=0
+    for j in i:
+        if j ==" ":
+            count+=1
+    a.append(count+1)
+print(a)
+print(max(a))
