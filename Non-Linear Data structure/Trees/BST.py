@@ -15,12 +15,24 @@ class BST:
             temp=self.root
             while temp != None:
                 if temp.item == value or temp.item < value:
+                    if temp.right is None:
+                        temp.right=n
                     temp=temp.right
-                elif temp.item > value:
+                else:
+                    if temp.left is None:
+                        temp.left =n 
+                    temp=temp.left
+    def search(self,value):
+        if self.root == None:
+            raise IndexError("The Tree is empty")
+        else:
+            temp=self.root
+            while temp!=None:
+                if temp.item == value:
+                    return temp
+                elif temp.item < value:
                     temp=temp.left
                 else:
-                    temp=temp
-            if temp.item > value:
-                temp.left=n
-            else:
-                temp.right=n
+                    temp=temp.right
+            return None
+    
