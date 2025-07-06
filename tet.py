@@ -33,3 +33,24 @@ for i in sentence:
     a.append(count+1)
 print(a)
 print(max(a))
+class Solution:
+    def leaders(self, arr):
+        # code here
+        i=0
+        j=len(arr)-1
+        a=[]
+        while i <= j:
+            if arr[i] > arr[j]:
+                j-=1
+            elif arr[i] < arr[j]:
+                i+=1
+                j=len(arr)-1
+            else:
+                a.append(arr[i])
+                i+=1
+                j=len(arr)-1
+        return a
+
+obj=Solution()
+res=obj.leaders([16 ,17, 4, 3, 5, 2])
+print(res)
