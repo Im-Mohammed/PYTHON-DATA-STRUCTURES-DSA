@@ -57,7 +57,18 @@ class BST:
             self.rpostorder(root.left,result)
             self.rpostorder(root.right,result)
             result.append(root.item)
-
+    def minimum(self):
+        return self.rminimum(self.root)
+    def rminimum(self,root):
+        if root.left is None:
+            return root.item
+        return self.rminimum(root.left)
+    def maximum(self):
+        return self.rmaxi(self.root)
+    def rmaxi(self,root):
+        if root.right is None:
+            return root.item
+        return self.rmaxi(root.right)
 bst=BST()
 bst.insert(50)
 bst.insert(40)
@@ -78,3 +89,7 @@ print('\n')
 post=bst.postorder()
 print(post)
 print('\n')
+a=bst.minimum()
+print("The minimum Element is : ",a)
+b=bst.maximum()
+print("The maximum element is : ",b)
