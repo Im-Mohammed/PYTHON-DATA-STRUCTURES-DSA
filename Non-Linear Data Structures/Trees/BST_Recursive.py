@@ -69,6 +69,26 @@ class BST:
         if root.right is None:
             return root.item
         return self.rmaxi(root.right)
+    def delete(self,data):
+        return self.rdelete(self.root,data)
+    def rdelete(self,root,data):
+        if root is None:
+            return root
+        if data < root.item :
+            root.left=self.rdelete(root.left,data)
+        elif data > root.item:
+            root.right = self.rdelete(root.right,data)
+        else:
+            if root.left is None:
+                return root.right
+            elif root.right is None:
+                return root.left
+            root.item=self.minimum(root.right)
+            self.rdelete(root.right,root.item)
+        return root
+    
+    
+    
 bst=BST()
 bst.insert(50)
 bst.insert(40)
