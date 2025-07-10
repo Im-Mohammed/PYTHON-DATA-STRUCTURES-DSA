@@ -55,11 +55,16 @@ obj=Solution()
 res=obj.leaders([16 ,17, 4, 3, 5, 2])
 print(res)
 def StringCount(s):
-    s=s.lower()
+    c=s.lower()
+    print(c)
     count=0
     prev=s[0]
-    for i in s:
+    print(prev)
+    for i in c:
         if prev!=i:
             count+=1
+            prev=i
     return count 
-StringCount()
+s="aAbBcC"
+a=StringCount(s)
+print(a)
