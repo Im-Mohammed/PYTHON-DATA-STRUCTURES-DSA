@@ -54,3 +54,12 @@ class Solution:
 obj=Solution()
 res=obj.leaders([16 ,17, 4, 3, 5, 2])
 print(res)
+def StringCount(s):
+    s=s.lower()
+    count=0
+    prev=s[0]
+    for i in s:
+        if prev!=i:
+            count+=1
+    return count 
+StringCount()
