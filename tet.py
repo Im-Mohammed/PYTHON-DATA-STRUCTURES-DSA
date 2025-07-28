@@ -80,3 +80,6 @@ def searchInSorted(arr, k):
         else:
             j=mid
     return False
+arr=[1,2,3,4,5,6]
+k=6
+searchInSorted(arr,k)
