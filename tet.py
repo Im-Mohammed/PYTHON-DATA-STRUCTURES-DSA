@@ -68,3 +68,15 @@ def StringCount(s):
 s="aAbBcC"
 a=StringCount(s)
 print(a)
+def searchInSorted(arr, k):
+    i=0
+    j=len(arr)-1
+    while i<= j:
+        mid=(i+j)//2
+        if arr[mid]==k:
+           return True
+        elif arr[mid] < k:
+            i=mid+1
+        else:
+            j=mid
+    return False
