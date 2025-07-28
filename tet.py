@@ -82,4 +82,5 @@ def searchInSorted(arr, k):
     return False
 arr=[1,2,3,4,5,6]
 k=6
-searchInSorted(arr,k)
+b=searchInSorted(arr,k)
+print(b)
