@@ -97,5 +97,6 @@ def MaxWaterContainer(height):
         else:
             right-=1
     return max_area
-a=MaxWaterContainer([1,8,6,2,5,4,8,3,7])
+height=[1,8,6,2,5,4,8,3,7]
+a=MaxWaterContainer(height)
 print(a)
