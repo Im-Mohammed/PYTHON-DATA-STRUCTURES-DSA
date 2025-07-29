@@ -89,7 +89,7 @@ def MaxWaterContainer(height):
     left=0
     right=len(height)-1
     max_area=0
-    while left <= right:
+    while left < right:
         curarea=min(height[left],height[right])*(right-left)
         max_area=max(max_area,curarea)
         if height[left] < height[right]:
