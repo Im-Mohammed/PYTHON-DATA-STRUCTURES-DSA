@@ -84,3 +84,16 @@ arr=[1,2,3,4,5,6]
 k=6
 b=searchInSorted(arr,k)
 print(b)
+#Maximum water container
+def MaxWaterContainer(height):
+    left=0
+    right=len(height)-1
+    max_area=0
+    while i < j:
+        curarea=min(height[left],height[right])*(right-left)
+        max_area=max(max_area,curarea)
+        if height[left] < height[right]:
+            i+=1
+        else:
+            j-=1
+    return max_area
