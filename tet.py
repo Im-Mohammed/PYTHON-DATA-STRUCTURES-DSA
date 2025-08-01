@@ -112,3 +112,5 @@ def flipAndInvertImage(image):
                 image[i][k]=1
     return image
 image = [[1,1,0],[1,0,1],[0,0,0]]
+a=flipAndInvertImage(image)
+print(a)
