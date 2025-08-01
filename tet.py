@@ -100,3 +100,17 @@ def MaxWaterContainer(height):
 height=[1,8,6,2,5,4,8,3,7]
 a=MaxWaterContainer(height)
 print("The container with most water is : ",a)
+def flipAndInvertImage(image):
+    for i in range(len(image)):
+        a=image[i]
+        a=a[::-1]
+        print(a)
+        for k in range(len(a)):
+            if image[i][k] == 1:
+                image[i][k]=0
+            else:
+                image[i][k]=1
+    return image
+image = [[1,1,0],[1,0,1],[0,0,0]]
+a=flipAndInvertImage(image)
+print(a)
