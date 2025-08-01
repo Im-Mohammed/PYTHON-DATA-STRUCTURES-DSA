@@ -106,11 +106,9 @@ def flipAndInvertImage(image):
         a=a[::-1]
         print(a)
         for k in range(len(a)):
-            if image[i][k] == 1:
+            if a[k] == 1:
                 image[i][k]=0
             else:
                 image[i][k]=1
     return image
 image = [[1,1,0],[1,0,1],[0,0,0]]
-a=flipAndInvertImage(image)
-print(a)
