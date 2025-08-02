@@ -114,3 +114,22 @@ def flipAndInvertImage(image):
 image = [[1,1,0],[1,0,1],[0,0,0]]
 a=flipAndInvertImage(image)
 print(a)
+def sortColors(nums):
+        i=0
+        j=len(nums)-1
+        mid=i
+        while mid <= j:
+            if nums[mid]==0:
+                nums[i],nums[mid]=nums[mid],nums[i]
+                i+=1
+                mid+=1
+            elif nums[mid]==1:
+                mid+=1
+            else:
+                nums[mid],nums[j]=nums[j],nums[mid]
+                j-=1
+
+        return nums
+nums = [2,0,2,1,1,0]
+a=sortColors(nums)
+print(a)
