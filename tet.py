@@ -131,5 +131,5 @@ def sortColors(nums):
 
         return nums
 nums = [2,0,2,1,1,0]
-a=sortColors(nums)
-print(a)
+ans=sortColors(nums)
+print(ans)
