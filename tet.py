@@ -133,3 +133,18 @@ def sortColors(nums):
 nums = [2,0,2,1,1,0]
 ans=sortColors(nums)
 print(ans)
+def getCommon(nums1, nums2):
+    i,j=0,0
+    while i < len(nums1) and j < len(nums2):
+        if nums1[i]<nums2[j]:
+            i+=1            
+        elif nums1[i] > nums2[j]:
+            j+=1
+        else:
+            return nums1[i]
+    return -1
+nu1=[1,2,3]
+nu2=[2,4]
+ans=getCommon(nu1,nu2)
+print(ans)
+    
