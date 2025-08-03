@@ -146,5 +146,5 @@ def getCommon(nums1, nums2):
 nu1=[1,2,3]
 nu2=[2,4]
 ans=getCommon(nu1,nu2)
-print(ans)
+
     
