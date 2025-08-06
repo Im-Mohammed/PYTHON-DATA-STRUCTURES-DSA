@@ -160,3 +160,5 @@ def Twostrings(words1,words2):
     else:
         a=a+words2[i:]
     return a
+words1='abc'
+words2='pqrstuv'
