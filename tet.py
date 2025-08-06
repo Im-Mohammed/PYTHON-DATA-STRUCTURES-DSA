@@ -162,3 +162,5 @@ def Twostrings(words1,words2):
     return a
 words1='abc'
 words2='pqrstuv'
+c=Twostrings(words1,words2)
+print(c)
