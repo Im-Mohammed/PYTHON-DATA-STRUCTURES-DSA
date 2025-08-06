@@ -150,7 +150,7 @@ print(ans)
 def Twostrings(words1,words2):
     a=''
     i,j=0,0
-    while i < len(min(words1,words2)):
+    while i < len(min(words1,words2,key=len)):
         a=a+words1[i]
         a=a+words2[j]
         i+=1
