@@ -147,4 +147,16 @@ nu1=[1,2,3]
 nu2=[2,4]
 ans=getCommon(nu1,nu2)
 print(ans)
-    
+def Twostrings(words1,words2):
+    a=''
+    i,j=0,0
+    while i < len(min(words1,words2)):
+        a=a+words1[i]
+        a=a+words2[j]
+        i+=1
+        j+=1
+    if len(words1) > len(words2):
+        a=a+words1[i:]
+    else:
+        a=a+words2[i:]
+    return a
