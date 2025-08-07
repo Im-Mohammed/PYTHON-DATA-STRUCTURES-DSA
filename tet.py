@@ -167,10 +167,8 @@ print(c)
 def isPoweofTwo(n):
     x,i=1,1
     while n >= x:
-        print("The value of x",x)
         if n == x:
             return True
         x=2**i
         i+=1
-    print(x)
     return False
