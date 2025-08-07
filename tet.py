@@ -172,5 +172,5 @@ def isPoweofTwo(n):
         x=2**i
         i+=1
     return False
-ans=isPoweofTwo(16)
+ans=isPoweofTwo(32)
 print(ans)
