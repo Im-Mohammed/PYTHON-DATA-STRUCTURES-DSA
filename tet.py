@@ -173,3 +173,4 @@ def isPoweofTwo(n):
         i+=1
     return False
 ans=isPoweofTwo(16)
+print(ans)
