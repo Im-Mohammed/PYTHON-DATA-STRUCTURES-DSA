@@ -187,4 +187,4 @@ def FizzBuzz(n):
             a.append(f'{i}')
     return a
 n=8
-
+print(FizzBuzz(n))
