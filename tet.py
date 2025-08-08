@@ -184,5 +184,7 @@ def FizzBuzz(n):
         elif i % 5 == 0:
             a.append('Buzz')
         else:
-            a.append(f'i')
+            a.append(f'{i}')
     return a
+n=8
+print(FizzBuzz(n))
