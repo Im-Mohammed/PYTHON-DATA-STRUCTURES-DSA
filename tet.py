@@ -188,3 +188,12 @@ def FizzBuzz(n):
     return a
 n=8
 print(FizzBuzz(n))
+def heightChecker(n):
+    c=sorted(n)
+    i=0
+    cnt=0
+    while i < len(n):
+        if n[i] != c[i]:
+            cnt+=1
+        i+=1
+    return cnt
