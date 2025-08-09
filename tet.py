@@ -197,3 +197,4 @@ def heightChecker(n):
             cnt+=1
         i+=1
     return cnt
+c=[1,1,4,2,1,3]
