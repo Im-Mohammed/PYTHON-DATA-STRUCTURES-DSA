@@ -93,6 +93,9 @@ class BST:
         return curr.item
     def max_value(self,temp):
         curr=temp
+        while curr.right is not None:
+            curr=curr.right
+        return curr.item
 
 
     
