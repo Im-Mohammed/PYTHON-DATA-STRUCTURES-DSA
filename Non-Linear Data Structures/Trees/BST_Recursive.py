@@ -86,7 +86,11 @@ class BST:
             root.item=self.minimum(root.right)
             self.rdelete(root.right,root.item)
         return root
-    
+    def min_value(self,temp):
+        curr=temp
+        while curr.left is not None:
+            curr=curr.left
+
     
     
 bst=BST()
