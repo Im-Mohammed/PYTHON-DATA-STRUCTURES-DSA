@@ -91,6 +91,9 @@ class BST:
         while curr.left is not None:
             curr=curr.left
         return curr.item
+    def max_value(self,temp):
+        curr=temp
+
 
     
 
