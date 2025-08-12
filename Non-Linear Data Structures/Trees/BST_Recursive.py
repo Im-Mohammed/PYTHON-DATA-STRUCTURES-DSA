@@ -90,6 +90,9 @@ class BST:
         curr=temp
         while curr.left is not None:
             curr=curr.left
+        return curr.item
+
+    
 
     
     
