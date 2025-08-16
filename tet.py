@@ -204,7 +204,7 @@ def nCr(n, r):
     fact=1
     rfact=1
     dfact=1
-    if r < n:
+    if r <= n:
         for i in range(n,0,-1):
             if i <= n-r:
                 rfact=rfact*i
