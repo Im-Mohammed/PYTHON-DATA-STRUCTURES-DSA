@@ -213,7 +213,6 @@ def nCr(n, r):
             fact=fact*i
         print(fact)
         print(rfact)
-        print(dfact)
         return fact/(rfact*dfact)
     else:
         return 0
