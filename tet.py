@@ -199,3 +199,19 @@ def heightChecker(n):
     return cnt
 c=[1,1,4,2,1,3]
 print(heightChecker(c))
+def nCr(n, r):
+    fact=1
+    rfact=1
+    if r < n:
+        for i in range(n,0,-1):
+            if i <= r:
+                rfact=rfact*i
+            fact=fact*i
+        print(fact)
+        print(rfact)
+        den=rfact*(fact-rfact)
+        print(den)
+        return fact/den
+    else:
+        return 0
+print(nCr(3,2))
