@@ -211,7 +211,7 @@ def nCr(n, r):
             if i <= r:
                 dfact=dfact*i
             fact=fact*i
-        return fact/(rfact*dfact)
+        return fact//(rfact*dfact)
     else:
         return 0
 print(nCr(3,2))
