@@ -224,4 +224,4 @@ def Median(a,b):
     else:
         mid = len(c) // 2
         return float(c[mid])
-print(Median([1,3],[2]))
+print(Median([1,3],[2,6]))
