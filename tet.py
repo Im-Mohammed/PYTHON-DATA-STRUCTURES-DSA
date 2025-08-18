@@ -215,3 +215,10 @@ def nCr(n, r):
     else:
         return 0
 print(nCr(3,2))
+def Median(a,b):
+    c=[sorted(a+b)]
+    if len(c) % 2 == 0:
+        return c[(0+len(c)-1)//2]
+    else:
+        return c[len(c) // 2]
+print(Median([1,3],[2]))
