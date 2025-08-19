@@ -225,3 +225,16 @@ def Median(a,b):
         mid = len(c) // 2
         return float(c[mid])
 print(Median([1,4,5],[2,8,0,6]))
+print('\n')
+def constructLowerArray(arr):
+    # code here
+    cnt=0
+    a=[]
+    for i in range(len(arr)):
+        cnt=0 
+        for j in range(i+1,len(arr)):
+            if arr[i] > arr[j]:
+                cnt+=1
+        a.append(cnt)
+    return a
+print(constructLowerArray([3, 2, 1, 5, 4]))
