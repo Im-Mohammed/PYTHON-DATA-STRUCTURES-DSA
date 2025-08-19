@@ -234,5 +234,6 @@ def constructLowerArray(arr):
             if arr[i] > arr[j]:
                 cnt+=1
         a.append(cnt)
+        print(a)
     return a
 print(constructLowerArray([3, 2, 1, 5, 4]))
