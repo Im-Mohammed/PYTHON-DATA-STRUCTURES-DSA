@@ -228,7 +228,6 @@ print(Median([1,4,5],[2,8,0,6]))
 print('\n')
 def constructLowerArray(arr):
     # code here
-    cnt=0
     a=[]
     for i in range(len(arr)):
         cnt=0 
