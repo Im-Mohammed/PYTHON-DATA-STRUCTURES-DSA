@@ -238,6 +238,7 @@ def constructLowerArray(arr):
 print(constructLowerArray([3, 2, 1, 5, 4]))
 def findTwoElement(arr):
     a=list(range(1,len(arr)+1))
+    arr=sorted(arr)
     print(a)
     c=[]
     cnt=0
