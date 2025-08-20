@@ -236,3 +236,12 @@ def constructLowerArray(arr):
         print(a)
     return a
 print(constructLowerArray([3, 2, 1, 5, 4]))
+def findTwoElement(self, arr):
+    a=list(range(1,len(arr)+1))
+    c=[]
+    cnt=0
+    for i in arr:
+        if i == cnt:
+            c.append(cnt)
+            cnt=i
+                
