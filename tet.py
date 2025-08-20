@@ -241,14 +241,10 @@ def findTwoElement(arr):
     c=[]
     cnt=0
     for i in arr:
-        print(i)
-        print(cnt)
         if i == cnt:
-            print(i)
             c.append(cnt)
         cnt=i
     mis=sum(a)-sum(set(arr))
-    print(mis)
     c.append(mis)
     return c
 print(findTwoElement([1, 3, 3]))
