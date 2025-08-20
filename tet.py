@@ -245,7 +245,6 @@ def findTwoElement(arr):
         if i == cnt:
             c.append(cnt)
         cnt=i
-    mis=sum(a)-sum(set(arr))
-    c.append(mis)
+    c.append(sum(a)-sum(set(arr)))
     return c
 print(findTwoElement([1, 3, 3]))
