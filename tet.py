@@ -249,3 +249,11 @@ def findTwoElement(arr):
     c.append(sum(a)-sum(set(arr)))
     return c
 print(findTwoElement([1, 3, 3]))
+print('\n')
+def rotateArr(self, arr, d):
+    ar=arr[:d-1:-1]
+    print(ar)
+    br=arr[d-1:]
+    arr=br+ar
+    return arr
+print(rotateArr(0,[1,2,3,4,5],2))
